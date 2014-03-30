@@ -1,0 +1,160 @@
+---
+:water:
+  :symbol: :water
+  :japanese_name: "水"
+  :english_name: water
+  :specific_gravity: 1.0
+  :aliases: []
+:sake:
+  :symbol: :sake
+  :japanese_name: "酒"
+  :english_name: sake
+  :specific_gravity: 1.0
+  :aliases: []
+:wine:
+  :symbol: :wine
+  :japanese_name: "ワイン"
+  :english_name: wine
+  :specific_gravity: 1.0
+  :aliases: []
+:vinegar:
+  :symbol: :vinegar
+  :japanese_name: "酢"
+  :english_name: vinegar
+  :specific_gravity: 1.0
+  :aliases: []
+:soy_source:
+  :symbol: :soy_source
+  :japanese_name: "しょうゆ"
+  :english_name: soy source
+  :specific_gravity: 1.15
+  :aliases: []
+:sweet_sake:
+  :symbol: :sweet_sake
+  :japanese_name: "本みりん"
+  :english_name: sweet dake
+  :specific_gravity: 1.15
+  :aliases: []
+:fake_sweet_sake:
+  :symbol: :fake_sweet_sake
+  :japanese_name: "みりん風調味料"
+  :english_name: fake sweet sake
+  :specific_gravity: 1.25
+  :aliases: []
+:soybean_paste:
+  :symbol: :soybean_paste
+  :japanese_name: "みそ"
+  :english_name: soybean paste
+  :specific_gravity: 1.15
+  :aliases: []
+:sea_salt:
+  :symbol: :sea_salt
+  :japanese_name: "粗塩"
+  :english_name: sea salt
+  :specific_gravity: 0.9
+  :aliases: []
+:salt:
+  :symbol: :salt
+  :japanese_name: "食塩"
+  :english_name: salt
+  :specific_gravity: 1.2
+  :aliases: []
+:refined_salt:
+  :symbol: :refined_salt
+  :japanese_name: "精製塩"
+  :english_name: refined salt
+  :specific_gravity: 1.2
+  :aliases: []
+:castor_sugar:
+  :symbol: :castor_sugar
+  :japanese_name: "上白糖"
+  :english_name: castor sugar
+  :specific_gravity: 0.65
+  :aliases: []
+:granulated_sugar:
+  :symbol: :granulated_sugar
+  :japanese_name: "グラニュー糖"
+  :english_name: granulated sugar
+  :specific_gravity: 0.9
+  :aliases: []
+:brown_sugar:
+  :symbol: :brown_sugar
+  :japanese_name: "ざらめ"
+  :english_name: brown sugar
+  :specific_gravity: 1.0
+  :aliases: []
+:starch_syrup:
+  :symbol: :starch_syrup
+  :japanese_name: "水あめ"
+  :english_name: starch syrup
+  :specific_gravity: 1.4
+  :aliases: []
+:honey:
+  :symbol: :honey
+  :japanese_name: "はちみつ"
+  :english_name: honey
+  :specific_gravity: 1.4
+  :aliases: []
+:jam:
+  :symbol: :jam
+  :japanese_name: "ジャム"
+  :english_name: jam
+  :specific_gravity: 1.25
+  :aliases: []
+:marmalade:
+  :symbol: :marmalade
+  :japanese_name: "マーマレード"
+  :english_name: marmalade
+  :specific_gravity: 1.35
+  :aliases: []
+:oil:
+  :symbol: :oil
+  :japanese_name: "油"
+  :english_name: oil
+  :specific_gravity: 0.9
+  :aliases: []
+:butter:
+  :symbol: :butter
+  :japanese_name: "バター"
+  :english_name: butter
+  :specific_gravity: 0.9
+  :aliases: []
+:margarine:
+  :symbol: :margarine
+  :japanese_name: "マーガリン"
+  :english_name: margarine
+  :specific_gravity: 0.9
+  :aliases: []
+:lard:
+  :symbol: :lard
+  :japanese_name: "ラード"
+  :english_name: lard
+  :specific_gravity: 0.85
+  :aliases: []
+:shortening:
+  :symbol: :shortening
+  :japanese_name: "ショートニング"
+  :english_name: shortening
+  :specific_gravity: 0.8
+  :aliases: []
+:cornstarch:
+  :symbol: :cornstarch
+  :japanese_name: "コーンスターチ"
+  :english_name: cornstarch
+  :specific_gravity: 0.5
+  :aliases: []
+:flour:
+  :symbol: :flour
+  :japanese_name: "小麦粉"
+  :english_name: flour
+  :specific_gravity: 0.55
+  :aliases:
+  - :strong_flour
+  - :medium_flour
+  - :weak_flour
+:milk:
+  :symbol: :milk
+  :japanese_name: "牛乳"
+  :english_name: milk
+  :specific_gravity: 1.05
+  :aliases: []
