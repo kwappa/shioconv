@@ -1,6 +1,6 @@
 # Shioconv
 
-TODO: Write a gem description
+convert between cubic contents and weight for typcal seasonings.
 
 ## Installation
 
@@ -19,6 +19,17 @@ Or install it yourself as:
 ## Usage
 
 TODO: Write usage instructions here
+
+## Data source
+
+source of data/condiments.yaml is temporary hosted on google drive.
+
+https://docs.google.com/spreadsheet/ccc?key=0AkNdq2RYAbcWdEp0cGFfMnlKeFd0N3BUbVNOMmo3cWc#gid=0
+
+1. select all and copy this sheat and paste as `data/condiments.tsv`
+1. `% cd shiocnov/data`
+1. `% ruby meterials.rb`
+1. add, commit and push or send pull-reqest
 
 ## Contributing
 
