@@ -8,7 +8,8 @@
   :japanese_name: "酒"
   :english_name: sake
   :specific_gravity: 1.0
-  :synonyms: []
+  :synonyms:
+  - "日本酒"
 - :key: :wine
   :japanese_name: "ワイン"
   :english_name: wine
@@ -23,12 +24,14 @@
   :japanese_name: "しょうゆ"
   :english_name: soy source
   :specific_gravity: 1.15
-  :synonyms: []
+  :synonyms:
+  - "醤油"
 - :key: :sweet_sake
   :japanese_name: "本みりん"
   :english_name: sweet dake
   :specific_gravity: 1.15
-  :synonyms: []
+  :synonyms:
+  - "味醂"
 - :key: :fake_sweet_sake
   :japanese_name: "みりん風調味料"
   :english_name: fake sweet sake
@@ -38,27 +41,32 @@
   :japanese_name: "みそ"
   :english_name: soybean paste
   :specific_gravity: 1.15
-  :synonyms: []
+  :synonyms:
+  - "味噌"
 - :key: :sea_salt
   :japanese_name: "粗塩"
   :english_name: sea salt
   :specific_gravity: 0.9
-  :synonyms: []
+  :synonyms:
+  - "あら塩"
 - :key: :salt
   :japanese_name: "食塩"
   :english_name: salt
   :specific_gravity: 1.2
-  :synonyms: []
+  :synonyms:
+  - "塩"
 - :key: :refined_salt
   :japanese_name: "精製塩"
   :english_name: refined salt
   :specific_gravity: 1.2
-  :synonyms: []
+  :synonyms:
+  - "焼き塩"
 - :key: :castor_sugar
   :japanese_name: "上白糖"
   :english_name: castor sugar
   :specific_gravity: 0.65
-  :synonyms: []
+  :synonyms:
+  - "砂糖"
 - :key: :granulated_sugar
   :japanese_name: "グラニュー糖"
   :english_name: granulated sugar
@@ -68,22 +76,26 @@
   :japanese_name: "ざらめ"
   :english_name: brown sugar
   :specific_gravity: 1.0
-  :synonyms: []
+  :synonyms:
+  - "粗目"
 - :key: :starch_syrup
   :japanese_name: "水あめ"
   :english_name: starch syrup
   :specific_gravity: 1.4
-  :synonyms: []
+  :synonyms:
+  - "水飴"
 - :key: :honey
   :japanese_name: "はちみつ"
   :english_name: honey
   :specific_gravity: 1.4
-  :synonyms: []
+  :synonyms:
+  - "蜂蜜"
 - :key: :jam
   :japanese_name: "ジャム"
   :english_name: jam
   :specific_gravity: 1.25
-  :synonyms: []
+  :synonyms:
+  - "ママレード"
 - :key: :marmalade
   :japanese_name: "マーマレード"
   :english_name: marmalade
@@ -93,7 +105,10 @@
   :japanese_name: "油"
   :english_name: oil
   :specific_gravity: 0.9
-  :synonyms: []
+  :synonyms:
+  - "サラダ油"
+  - "サラダオイル"
+  - "オイル"
 - :key: :butter
   :japanese_name: "バター"
   :english_name: butter
@@ -127,6 +142,11 @@
   - strong_flour
   - medium_flour
   - weak_flour
+- :key: :starch
+  :japanese_name: "片栗粉"
+  :english_name: starch
+  :specific_gravity: 0.65
+  :synonyms: []
 - :key: :milk
   :japanese_name: "牛乳"
   :english_name: milk
