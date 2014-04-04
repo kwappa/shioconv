@@ -1,4 +1,5 @@
 require 'yaml'
+require 'ostruct'
 
 require_relative "shioconv/version"
 require_relative "shioconv/unit"
