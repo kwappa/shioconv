@@ -19,6 +19,8 @@ class Shioconv::Unit
     },
   }.freeze
 
+  CONVERTABLE_UNITS = UNIT_TYPES.map { |_, units| units.keys }.flatten.freeze
+
   def self.find_by(unit_name)
     UNIT_TYPES.each do |unit_type, units|
       if units.has_key?(unit_name)
@@ -27,6 +29,10 @@ class Shioconv::Unit
     end
 
     raise ArgumentError.new("unit [#{unit_name}] does not found.") unless @name
+  end
+
+  def self.convertable?(unit)
+    CONVERTABLE_UNITS.include?(unit)
   end
 
   def initialize(type: type, unit: unit, value: value)
