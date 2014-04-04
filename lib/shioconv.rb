@@ -8,11 +8,9 @@ require_relative "shioconv/condiment"
 class Shioconv
   attr_reader :condiment, :quantity, :unit
 
-  def self.measure(condiment_name, quantity, unit)
-    condiment = Condiment.find(condiment_name)
-    unless !!condiment
-      raise ArgumentError.new("condiment '#{condiment_name}' does not found.")
-    end
+  def self.measure(condiment_name, quantity, unit_name)
+    condiment = Condiment.find_by(condiment_name)
+    unit      = Unit.find_by(unit_name)
 
     self.new(condiment: condiment, quantity: quantity, unit: unit)
   end
@@ -20,6 +18,6 @@ class Shioconv
   def initialize(condiment: condiment, quantity: quantity, unit: unit)
     @condiment = condiment
     @quantity  = quantity
-    @unit      = Unit.new(unit)
+    @unit      = unit
   end
 end

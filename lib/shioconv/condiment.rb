@@ -1,5 +1,5 @@
 class Shioconv::Condiment < OpenStruct
-  def self.find(condiment)
+  def self.find_by(condiment)
     # find by key
     if condiment.is_a?(Symbol)
       result = raw_data.find { |data| data[:key] == condiment }
@@ -17,7 +17,7 @@ class Shioconv::Condiment < OpenStruct
     result = raw_data.find { |data| data[:synonyms].include?(condiment) }
     return self.new(result) if result
 
-    nil
+    raise ArgumentError.new("condiment '#{condiment}' does not found.")
   end
 
   def self.data_file

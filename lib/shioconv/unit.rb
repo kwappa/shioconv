@@ -19,15 +19,19 @@ class Shioconv::Unit
     },
   }.freeze
 
-  def initialize(unit)
+  def self.find_by(unit_name)
     UNIT_TYPES.each do |unit_type, units|
-      if units.has_key?(unit)
-        @type  = unit_type
-        @name  = unit
-        @value = units[unit]
-        break
+      if units.has_key?(unit_name)
+        return self.new(unit: unit_type, name: unit_name, value: units[unit_name])
       end
     end
-    raise ArgumentError.new("unit [#{unit}] does not found.") unless @name
+
+    raise ArgumentError.new("unit [#{unit_name}] does not found.") unless @name
+  end
+
+  def initialize(type: type, unit: unit, value: value)
+    @type  = type
+    @unit  = unit
+    @value = value
   end
 end
