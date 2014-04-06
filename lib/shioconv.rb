@@ -20,4 +20,11 @@ class Shioconv
     @quantity  = quantity
     @unit      = unit
   end
+
+  def method_missing(name, *args)
+    return super unless m = /\Ato_(?<dst_unit>\w+)\Z/.match(name)
+    dst_unit = m[:dst_unit].to_sym
+    return super unless Unit.convertable?(dst_unit)
+    dst_unit
+  end
 end
