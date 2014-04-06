@@ -35,6 +35,13 @@ class Shioconv::Unit
     CONVERTABLE_UNITS.include?(unit)
   end
 
+  def self.list
+    UNIT_TYPES.map do |type, units|
+      (base_unit, _) = units.shift
+      "#{type}: #{base_unit}, " << units.map { |unit, value| "#{unit}(#{value}#{base_unit})" }.join(', ')
+    end
+  end
+
   def initialize(type: type, name: name, value: value)
     @type  = type
     @name  = name

@@ -27,4 +27,10 @@ class Shioconv::Condiment < OpenStruct
   def self.raw_data
     @@raw_data ||= YAML.parse(File.read(data_file)).to_ruby
   end
+
+  def self.list
+    raw_data.map do |datum|
+      "#{sprintf('%-16s', datum[:key])} : 「#{datum[:japanese_name]}(#{datum[:english_name]})」"
+    end
+  end
 end
