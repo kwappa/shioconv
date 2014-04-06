@@ -152,3 +152,20 @@
   :english_name: milk
   :specific_gravity: 1.05
   :synonyms: []
+- :key: :cream
+  :japanese_name: "生クリーム"
+  :english_name: cream
+  :specific_gravity: 1.0
+  :synonyms: []
+- :key: :ketchup
+  :japanese_name: "ケチャップ"
+  :english_name: ketchup
+  :specific_gravity: 1.15
+  :synonyms:
+  - "トマトケチャップ"
+- :key: :worcestershire_sauce
+  :japanese_name: "ウスターソース"
+  :english_name: worcestershire sauce
+  :specific_gravity: 1.2
+  :synonyms:
+  - "ソース"
