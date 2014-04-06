@@ -18,22 +18,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+* convert amount of condiments between units
 
-## Data source
+```
+salt = Shioconv.measure(:salt, 1, :tbsp)
 
-source of data/condiments.yaml is temporary hosted on google drive.
+salt.to_cc # => 15.0
+salt.to_g  # => 18.0
+```
 
-https://docs.google.com/spreadsheet/ccc?key=0AkNdq2RYAbcWdEp0cGFfMnlKeFd0N3BUbVNOMmo3cWc#gid=0
+* show all condiments and units
 
-1. select all and copy this sheat and paste as `data/condiments.tsv`
-1. `% cd shiocnov/data`
-1. `% ruby meterials.rb`
-1. add, commit and push or send pull-reqest
+```
+Shioconv::Condiment.list # => returns array of string
+Shioconv::Unit.list      # => returns array of string
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/shioconv/fork )
+1. Fork it ( https://github.com/kwappa/shioconv/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
