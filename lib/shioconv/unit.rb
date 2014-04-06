@@ -24,7 +24,7 @@ class Shioconv::Unit
   def self.find_by(unit_name)
     UNIT_TYPES.each do |unit_type, units|
       if units.has_key?(unit_name)
-        return self.new(unit: unit_type, name: unit_name, value: units[unit_name])
+        return self.new(type: unit_type, name: unit_name, value: units[unit_name])
       end
     end
 
@@ -35,9 +35,9 @@ class Shioconv::Unit
     CONVERTABLE_UNITS.include?(unit)
   end
 
-  def initialize(type: type, unit: unit, value: value)
+  def initialize(type: type, name: name, value: value)
     @type  = type
-    @unit  = unit
+    @name  = name
     @value = value
   end
 end
