@@ -1,6 +1,8 @@
 # Shioconv
 
-convert between cubic contents and weight for typcal seasonings.
+convert between volumes and weight for typcal condiments.
+
+[![Build Status](https://travis-ci.org/kwappa/shioconv.png)](https://travis-ci.org/kwappa/shioconv)
 
 ## Installation
 
