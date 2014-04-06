@@ -56,9 +56,44 @@ describe Shioconv do
     end
 
     context 'when called convertable method' do
-      let(:convert_method) { :to_g }
-      it 'converts unit correctly' do
-        expect(salt.send(convert_method)).to eq :g
+      context 'from weight' do
+        subject(:soy_source) { Shioconv.measure(:soy_source, 10, :g) }
+
+        context 'to weight' do
+          it 'converts correctly from g to kg' do
+            expect(soy_source.to_kg).to be_within(0.01).of(0.01)
+          end
+
+          it 'converts correctly from g to oz' do
+            expect(soy_source.to_oz).to be_within(0.01).of(0.3527)
+          end
+        end
+
+        context 'to volume' do
+          it 'converts correctly from g to tbsp' do
+            expect(soy_source.to_tbsp).to be_within(0.01).of(0.5797)
+          end
+        end
+      end
+
+      context 'from value' do
+        subject(:soy_source) { Shioconv.measure(:soy_source, 15, :cc) }
+
+        context 'to volume' do
+          it 'converts correctly from cc to tbsp' do
+            expect(soy_source.to_tbsp).to be_within(0.01).of(1)
+          end
+
+          it 'converts correctly from cc to us_cpu' do
+            expect(soy_source.to_us_cup).to be_within(0.01).of(0.0634)
+          end
+        end
+
+        context 'to weight' do
+          it 'converts correctly from cc to g' do
+            expect(soy_source.to_g).to be_within(0.01).of(17.25)
+          end
+        end
       end
     end
   end

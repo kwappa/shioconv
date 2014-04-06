@@ -25,6 +25,7 @@ class Shioconv
     return super unless m = /\Ato_(?<dst_unit>\w+)\Z/.match(name)
     dst_unit = m[:dst_unit].to_sym
     return super unless Unit.convertable?(dst_unit)
-    dst_unit
+
+    @unit.convert(@condiment, @quantity, dst_unit)
   end
 end

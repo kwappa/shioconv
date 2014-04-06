@@ -40,4 +40,18 @@ class Shioconv::Unit
     @name  = name
     @value = value
   end
+
+  def convert(condiment, quantity, dst_unit)
+    return quantity if name == dst_unit
+    dst_unit = self.class.find_by(dst_unit)
+
+    current_vavlue = quantity * value / dst_unit.value
+    if type == :weight && dst_unit.type == :volume
+      current_vavlue /= condiment.specific_gravity
+    elsif type == :volume && dst_unit.type == :weight
+      current_vavlue *= condiment.specific_gravity
+    end
+
+    current_vavlue
+  end
 end
