@@ -6,6 +6,8 @@ convert between volumes and weight for typcal condiments.
 
 [![Coverage Status](https://coveralls.io/repos/kwappa/shioconv/badge.png)](https://coveralls.io/r/kwappa/shioconv)
 
+[![Code Climate](https://codeclimate.com/github/kwappa/shioconv.png)](https://codeclimate.com/github/kwappa/shioconv)
+
 ## Installation
 
 Add this line to your application's Gemfile:
