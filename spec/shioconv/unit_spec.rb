@@ -13,4 +13,8 @@ describe Shioconv::Unit do
       specify { expect(described_class.convertable?(not_convertable_unit)).to be_false }
     end
   end
+
+  describe '.list' do
+    specify { expect(described_class.list).to be_an Array }
+  end
 end

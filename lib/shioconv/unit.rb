@@ -10,13 +10,13 @@ class Shioconv::Unit
       cup:     200.0,
       us_cup:  236.56,
       jp_cup:  200.0,
-    },
+    }.freeze,
     weight: {
       g:         1.0,
       kg:     1000.0,
       oz:       28.349,
       lb:      453.592,
-    },
+    }.freeze,
   }.freeze
 
   CONVERTABLE_UNITS = UNIT_TYPES.map { |_, units| units.keys }.flatten.freeze
@@ -37,7 +37,7 @@ class Shioconv::Unit
 
   def self.list
     UNIT_TYPES.map do |type, units|
-      (base_unit, _) = units.shift
+      (base_unit, _) = units.dup.shift
       "#{type}: #{base_unit}, " << units.map { |unit, value| "#{unit}(#{value}#{base_unit})" }.join(', ')
     end
   end
