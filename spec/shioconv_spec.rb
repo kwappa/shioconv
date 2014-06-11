@@ -27,7 +27,7 @@ describe Shioconv do
       let(:superclass_method) { :frozen? }
       include_examples 'does not define instance method'
       it 'delegates to superclass' do
-        expect(salt.send(superclass_method)).to be_false
+        expect(salt.send(superclass_method)).to be_falsey
       end
     end
 
