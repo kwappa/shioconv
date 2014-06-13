@@ -84,7 +84,7 @@ describe Shioconv do
             expect(soy_source.to_tbsp).to be_within(0.01).of(1)
           end
 
-          it 'converts correctly from cc to us_cpu' do
+          it 'converts correctly from cc to us_cup' do
             expect(soy_source.to_us_cup).to be_within(0.01).of(0.0634)
           end
         end
