@@ -6,11 +6,11 @@ describe Shioconv::Unit do
 
   describe '.convertable?' do
     context 'when convertable unit given' do
-      specify { expect(described_class.convertable?(convertable_unit)).to be_true }
+      specify { expect(described_class.convertable?(convertable_unit)).to be_truthy }
     end
 
     context 'when not convertable unit given' do
-      specify { expect(described_class.convertable?(not_convertable_unit)).to be_false }
+      specify { expect(described_class.convertable?(not_convertable_unit)).to be_falsey }
     end
   end
 
