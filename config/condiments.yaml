@@ -108,6 +108,7 @@
   :synonyms:
   - "サラダ油"
   - "サラダオイル"
+  - "オリーブオイル"
   - "オイル"
 - :key: :butter
   :japanese_name: "バター"
@@ -169,3 +170,8 @@
   :specific_gravity: 1.2
   :synonyms:
   - "ソース"
+- :key: :mayonnaise
+  :japanese_name: "マヨネーズ"
+  :english_name: mayonnaise
+  :specific_gravity: 1.0
+  :synonyms: []
