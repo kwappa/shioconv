@@ -134,7 +134,10 @@
   :japanese_name: "コーンスターチ"
   :english_name: cornstarch
   :specific_gravity: 0.5
-  :synonyms: []
+  :synonyms:
+  - "コーングリッツ"
+  - "コーンフラワー"
+  - "コーンミール"
 - :key: :flour
   :japanese_name: "小麦粉"
   :english_name: flour
