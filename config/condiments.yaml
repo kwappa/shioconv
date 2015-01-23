@@ -174,4 +174,5 @@
   :japanese_name: "マヨネーズ"
   :english_name: mayonnaise
   :specific_gravity: 1.0
-  :synonyms: []
+  :synonyms:
+  - "マヨ"
