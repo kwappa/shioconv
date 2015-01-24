@@ -134,7 +134,10 @@
   :japanese_name: "コーンスターチ"
   :english_name: cornstarch
   :specific_gravity: 0.5
-  :synonyms: []
+  :synonyms:
+  - "コーングリッツ"
+  - "コーンフラワー"
+  - "コーンミール"
 - :key: :flour
   :japanese_name: "小麦粉"
   :english_name: flour
@@ -152,7 +155,8 @@
   :japanese_name: "牛乳"
   :english_name: milk
   :specific_gravity: 1.05
-  :synonyms: []
+  :synonyms:
+   - "ミルク"
 - :key: :cream
   :japanese_name: "生クリーム"
   :english_name: cream
@@ -174,4 +178,5 @@
   :japanese_name: "マヨネーズ"
   :english_name: mayonnaise
   :specific_gravity: 1.0
-  :synonyms: []
+  :synonyms:
+  - "マヨ"
