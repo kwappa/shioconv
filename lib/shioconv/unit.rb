@@ -42,7 +42,7 @@ class Shioconv::Unit
     end
   end
 
-  def initialize(type: type, name: name, value: value)
+  def initialize(type: type(), name: name(), value: value())
     @type  = type
     @name  = name
     @value = value

@@ -15,7 +15,7 @@ class Shioconv
     self.new(condiment: condiment, quantity: quantity, unit: unit)
   end
 
-  def initialize(condiment: condiment, quantity: quantity, unit: unit)
+  def initialize(condiment: condiment(), quantity: quantity(), unit: unit())
     @condiment = condiment
     @quantity  = quantity
     @unit      = unit
