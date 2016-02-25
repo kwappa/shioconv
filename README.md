@@ -6,20 +6,6 @@ convert between volumes and weight for typcal condiments.
 [![Coverage Status](https://coveralls.io/repos/kwappa/shioconv/badge.png?branch=master)](https://coveralls.io/r/kwappa/shioconv?branch=master)
 [![Code Climate](https://codeclimate.com/github/kwappa/shioconv.png)](https://codeclimate.com/github/kwappa/shioconv)
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'shioconv'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install shioconv
-
 ## Usage
 
 * convert amount of condiments between units
